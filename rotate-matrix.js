@@ -10,7 +10,7 @@ function rotateMatrix(array) {
   }
 
   for (var i = 0; i < array.length; i++) {
-    for (var j = 0; j < 3; j++) {
+    for (var j = 0; j < array[0].length; j++) {
       output[j].unshift(array[i][j]);
       console.log(i, j);
       console.log(output);
